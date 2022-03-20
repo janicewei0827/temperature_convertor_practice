@@ -12,6 +12,12 @@ class Convertor:
         self.convertor_frame = Frame(width=600, height=600, bg=background_color)
         self.convertor_frame.grid()
 
+        #Temperature COnversion Heading (rov 0)
+        self.temp_converter_label = Label(text="Temperature Converter",
+                                          font=("Arial", "30", "bold"),
+                                          bg=background_color,
+                                          padx=10, pady=10)
+        self.temp_converter_label.grid(row=0)
 
 # main routine
 if __name__ == "__main__":
